@@ -23,3 +23,18 @@ REDIS_PORT=6379
 # with docker
 $ docker-compose up --build
 ```
+
+## Request example
+### POST request to http://localhost:3000/order
+
+
+```bash 
+# request body
+{
+    "pizzas": [
+        {"name": "Peperoni", "ingridients": ["oregano", "red pepper flakes", "Parmesan cheese"]},
+        {"name": "California", "ingridients": ["oregano", "red pepper flakes", "Parmesan cheese"]},
+        {"name": "New York-Style", "ingridients": ["oregano", "red pepper flakes", "Parmesan cheese"]}
+    ]
+}
+```
